@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- 
+	 Data Mining Project
+	 published by Hun 
+-->
+<html lang="kor">
+
+<style>
+div.content{
+  position: relative;
+  margin-top: 50px;
+  width: 700px;
+  height: 400px;
+  background-color: white;
+  border: 7px double #008040;
+  border-radius: 10px;
+  float: left;
+  text-align: left;
+  padding-top: 50px;
+}
+</style>
+
+	<head>
+	<title>SNS and Happiness</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+		<link rel="stylesheet" type="text/css" href="asset/css/main.css">
+		<link rel="stylesheet" type="text/css" href="asset/css/content.css">
+	</head>
+	
+	<body>
+		<aside class='left'>
+		</aside>
+		
+		<div class='content'>
+		<center>
+	    <form action="result" method="post">
+	    	<table border="1" bgcolor="wheat">
+	    	<caption><h3>Insert New Data</h3></caption>
+			<tr>
+				<align text="right"><td>SNS 종류 : </td></align>
+				<td>
+					<select name="kind">
+					<option value="facebook">페이스북</option>
+					<option value="instagram">인스타그램</option>
+					<option value="naverband">네이버밴드</option>
+					<option value="kakaostory">카카오스토리</option>
+					<option value="etc" selected="selected">기타(sns 미사용자 포함)</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>총 사용 기간 : </td>
+				<td>
+					<select name="year">
+					<option value="less 1Y" selected="selected">1년 이하(sns 미사용자 포함)</option>
+					<option value="1Y">약 1년</option>
+					<option value="2Y">약 2년</option>
+					<option value="more 2Y">2년 이상</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>하루 평균 사용시간 : </td>
+				<td>
+					<select name="hour">
+					<option value="less 1H" selected="selected">1시간 이하(sns 미사용자 포함)</option>
+					<option value="1H">약 1시간</option>
+					<option value="more 1H">1시간 이상</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>사용 기기 : </td>
+				<td><input type="radio" name="inst" value="phone">스마트폰
+					<input type="radio" name="inst" value="pc">PC/노트북/태블릿
+				</td>
+			</tr>
+			<tr>
+				<td>부러움을 느낀 적이 있는지? : </td>
+				<td><input type="radio" name="isneg" value="yes">예
+					<input type="radio" name="isneg" value="no">아니오
+				</td>
+			</tr>
+			<tr>
+				<td>성별 : </td>
+				<td><input type="radio" name="gender" value="male">남
+					<input type="radio" name="gender" value="female">여
+				</td>
+			</tr>
+			<tr>
+				<td>나이 : </td>
+				<td>
+					<select name="age">
+					<option value="20s" selected="selected">20대</option>
+					<option value="30s">30대</option>
+					<option value="40s">40대</option>
+					<option value="40s~">40대 이상</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Algorithm : </td>
+				<td>
+					<select name="Algorithm">
+					<option value="or" selected="selected">1-Rule
+					<option value="nv">Naive-Bayes
+					<option value="dt">Decision-Tree
+					<option value="ar">Association-Rule
+					</select>
+				</td>
+			</tr>
+			
+			</table><br><br>
+			<input type="submit" value="실 행">&nbsp;<input type="reset" value="초기화">
+		</form>
+		</center>
+	  	</div>
+	  
+	  	<aside class='right'>
+	  	</aside>
+	  
+	  	<footer>
+	  		Data Mining <br>
+	  		Catholic Univ.
+	  	</footer>
+  </body>
+</html>
